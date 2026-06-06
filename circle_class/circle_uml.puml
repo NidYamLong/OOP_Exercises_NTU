@@ -1,0 +1,26 @@
+@startuml
+
+Class Circle{
+    -radius: double = 1.0
+    +Circle()
+    +Circle(radius: double)
+    +getRadius(): double
+    +setRadius(radius: double) <<final>>: void
+    +getArea(): double
+    +getCircumference(): double
+    +toString(): String
+}
+
+
+note as MathNote
+    Use JDK constant Math.PI
+end note
+
+Circle::getArea -- MathNote
+Circle::getCircumference -- MathNote
+
+note left of Circle::toString
+    "Circle[radius=?]"
+end note
+
+@enduml

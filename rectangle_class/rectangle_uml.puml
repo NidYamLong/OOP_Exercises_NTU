@@ -1,0 +1,21 @@
+@startuml
+
+Class Rectangle {
+    -length: float = 1.0f
+    -width: float = 1.0f
+    +Rectangle()
+    +Rectangle(length: float, width: float)
+    +getLength(): float
+    +setLength(length: float) <<final>>: void
+    +getWidth(): float
+    +setWidth(width: float) <<final>>: void
+    +getArea(): double
+    +getPerimeter(): double
+    +toString(): String
+}
+
+note left of Rectangle::toString
+    "Rectangle[length=?,width=?]"
+end note
+
+@enduml
