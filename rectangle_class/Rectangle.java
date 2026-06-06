@@ -1,5 +1,8 @@
 package rectangle_class;
 
+/**
+ *  @Author Leonardo Marques - 06/06/2026
+*/
 
 public class Rectangle {
     private float length = 1.0f;

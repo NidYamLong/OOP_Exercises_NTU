@@ -1,5 +1,6 @@
 package circle_class;
-/* 
+
+/**
     The expected output is:
 
     Circle[radius=1.1]

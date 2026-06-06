@@ -1,5 +1,9 @@
 package circle_class;
 
+/**
+ *  @Author Leonardo Marques - 06/06/2026
+*/
+
 public class Circle {
 
     private double radius = 1.0;

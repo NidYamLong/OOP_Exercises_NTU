@@ -1,6 +1,6 @@
 package employee_class;
 
-/*
+/**
     The expected out is:
 
     Employee[id=8,name=Peter Tan,salary=2500]

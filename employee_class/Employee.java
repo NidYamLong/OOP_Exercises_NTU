@@ -1,5 +1,9 @@
 package employee_class;
 
+/**
+ *  @Author Leonardo Marques - 06/06/2026
+*/
+
 public class Employee {
 
     private int id;

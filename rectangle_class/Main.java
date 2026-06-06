@@ -1,5 +1,6 @@
 package rectangle_class;
-/* 
+
+/*
     The expected output is:
 
     Rectangle[length=1.2,width=3.4]
