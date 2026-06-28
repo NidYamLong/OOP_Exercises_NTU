@@ -32,3 +32,10 @@ is designed as shown in the following class diagram.
 The method raiseSalary(percent) increases the salary by the given percentage. Write the Employee class.</p>
 
 ##### - [The Employee Class](./employee_class/)
+
+<p>
+A class called InvoiceItem, which models an item of an invoice, with ID, description, quantity and unit price,
+<br>
+is designed as shown in the following class diagram. Write the InvoiceItem class.</p>
+
+##### - [The InvoiceItem Class](./invoiceItem_class/)

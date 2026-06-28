@@ -1,0 +1,30 @@
+' Author: Leonardo Marques - 28/06/2026
+
+@startuml
+
+class InvoiceItem {
+    - id: String
+    - desc: String
+    - qty: int
+    - unitPrice: double
+
+    + InvoiceItem(id: String, desc: String, qty: int, unitPrice: double)
+    + getId(): String
+    + getDesc(): String
+    + getQty(): int
+    + setQty(qty: int): void
+    + getUnitPrice(): double
+    + setUnitPrice(unitPrice: double): void
+    + getTotal(): double
+    + toString(): String
+}
+
+note right of InvoiceItem::getTotal
+    unitPrice * qty
+end note
+
+note left of InvoiceItem::toString
+    "InvoiceItem[id=?,desc=?,qty=?,unitPrice=?]"
+end note
+
+@enduml
