@@ -1,0 +1,43 @@
+' Author: Leonardo Marques - 06/06/2026
+
+@startuml
+
+class Account {
+    -id: String
+    -name: String
+    -balance: int = 0
+
+    +Account(id: String, name: String)
+    +Account(id: String, name: String, balance: int)
+    +getID(): String
+    +getName(): String
+    +getBalance(): int
+    +credit(amount: int): int
+    +debit(amount: int): int
+    +transferTo(another: Account, amount: int) int
+    +toString(): String
+}
+
+note left of Account::credit
+    Add amount to balance, return balance
+end note
+
+note left of Account::debit
+    if amount <= balance
+        subtract amount from balance
+    else print "Amount exceeded balance"
+    return balance
+end note
+
+note right of Account::debit
+    if amount <= balance
+        transfer amount to the given Account
+    else print "Amount exceeded balance"
+    return balance
+end note
+
+note right of Account::debit
+    "Account[id=?,name=?,balance=?]"
+end note
+
+@enduml

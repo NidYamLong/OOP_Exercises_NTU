@@ -39,3 +39,11 @@ A class called InvoiceItem, which models an item of an invoice, with ID, descrip
 is designed as shown in the following class diagram. Write the InvoiceItem class.</p>
 
 ##### - [The InvoiceItem Class](./invoiceItem_class/)
+
+<p>
+A class called Account, which models a bank account of a customer, is designed as shown in the following class diagram. The methods credit(amount) and debit(amount) add or subtract the given amount to the balance.
+<br>
+The method transferTo(anotherAccount, amount) transfers the given amount from this Account to the given anotherAccount. Write the Account class.
+</p>
+
+##### - [The Account Class](./account_class/)
