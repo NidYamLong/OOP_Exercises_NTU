@@ -1,0 +1,31 @@
+' Author: Leonardo Marques - 23/06/2026
+
+@startuml
+
+class Date {
+    -day: int
+    -month: int
+    -year: int
+    +Date(day: int, month: int, year: int)
+    +getDay(): int
+    +getMonth(): int
+    +getYear(): int
+    +setDay(day: int): void
+    +setMonth(month: int): void
+    +setYear(year: int): void
+    +setDate(day: int, month: int, year: int): int
+    +toString(): String
+}
+
+note left of Date
+    day = [1, 31],
+    month = [1, 12],
+    year = [1900, 9999]
+    No input validation needed
+end note
+
+note right of Date::toString
+    "dd/mm/yyyy" with leading zero
+end note
+
+@enduml
