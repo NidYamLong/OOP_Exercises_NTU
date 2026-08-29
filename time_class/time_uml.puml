@@ -1,0 +1,31 @@
+' Author: Leonardo Marques - 29/08/2026
+
+@startuml
+
+class Time {
+    -hour: int
+    -minute: int
+    -second: int
+
+    +Time(hour:int, minute:int, second:int)
+    +getHour(): int
+    +getMinute(): int
+    +getSecond(): int
+    +setHour(hour: int): void
+    +setMinute(minute: int): void
+    +setSecond(second: int): void
+    +setTime(hour: int, minute: int, second: int): void
+    +toString(): String
+    +nextSecond(): Time
+    +previousSecond(): Time
+}
+
+note left of Time::toString
+    "hh:mm:ss" with leading zero
+end note
+
+note right of Time::nextSecond
+    Advance by 1 second and return this instance
+end note
+
+@enduml
