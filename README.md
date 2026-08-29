@@ -62,4 +62,4 @@ The methods nextSecond() and previousSecond() shall advance or rewind this insta
 so as to support chaining operation such as t1.nextSecond().nextSecond(). Write the Time class.
 </p>
 
-##### - [The Time Class]()
+##### - [The Time Class](./time_class/)
