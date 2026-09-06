@@ -63,3 +63,15 @@ so as to support chaining operation such as t1.nextSecond().nextSecond(). Write 
 </p>
 
 ##### - [The Time Class](./time_class/)
+
+<p>
+A class called Ball, which models a bouncing ball, is designed as shown in the following class diagram. It contains its radius, x and y position.
+<br>
+Each move-step advances the x and y by delta-x and delta-y, respectively. delta-x and delta-y could be positive or negative.
+<br>
+The reflectHorizontal() and reflectVertical() methods could be used to bounce the ball off the walls. Write the Ball class. 
+<br>
+Study the test driver on how the ball bounces.
+</p>
+
+##### - [The Ball Class](./ball_class/)

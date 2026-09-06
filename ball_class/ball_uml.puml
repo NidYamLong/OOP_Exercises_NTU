@@ -1,0 +1,48 @@
+' Author: Leonardo Marques - 06/09/2026
+
+@startuml
+
+class Ball {
+    -x: float
+    -y: float
+    -radius: int
+    -xDelta: float
+    -yDelta: float
+
+    +Ball(x: float, y: float, radius: int, xDelta: float, yDelta: float)
+    +getX(): float
+    +setX(x: float): void
+    +getY(): float
+    +setY(y: float): void
+    +getRadius(): int
+    +setRadius(radius: int): void
+    +getXDelta(): float
+    +setXDelta(xDelta: float): void
+    +getYDelta(): float
+    +setYDelta(yDelta: float): void
+    +move(): void
+    +reflectHorizontal(): void
+    +reflectVertical(): void
+    +toString(): String
+
+}
+
+note left of Ball::move
+    Move one step:
+    x += xDelta
+    y += yDelta
+end note
+
+note right of Ball:reflectHorizontal
+    xDelta = -xDelta
+end note
+
+note left of Ball:reflectVertical
+    yDelta = -yDelta
+end note
+
+note right of Ball:toString
+    "Ball[(x,y),speed=(xDelta, yDelta)]"
+end note
+
+@enduml
